@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Prompt Power Moves: 16 Essential Commands for 2025-2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%),
+                linear-gradient(135deg, #0a192f 0%, #1a365d 30%, #2d3748 70%, #1a202c 100%);
+            background-size: cover, cover, cover, cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            padding: 20px;
+            color: white;
+            position: relative;
+            overflow-x: auto;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 500'%3E%3Cdefs%3E%3ClinearGradient id='skyGrad' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2323001a33' stop-opacity='1'/%3E%3Cstop offset='50%25' stop-color='%2323003d66' stop-opacity='0.8'/%3E%3Cstop offset='100%25' stop-color='%2323001f3f' stop-opacity='0.6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23skyGrad)' width='1400' height='500'/%3E%3Cg opacity='0.85'%3E%3Crect fill='%2323001f3f' x='60' y='220' width='70' height='280' rx='8'/%3E%3Crect fill='%2323002b4d' x='140' y='190' width='65' height='310' rx='10'/%3E%3Crect fill='%2323001f3f' x='220' y='240' width='55' height='260' rx='8'/%3E%3Crect fill='%2323003d66' x='290' y='200' width='70' height='300' rx='12'/%3E%3Crect fill='%2323001f3f' x='370' y='230' width='60' height='270' rx='9'/%3E%3Crect fill='%2323002b4d' x='440' y='170' width='75' height='330' rx='11'/%3E%3Crect fill='%2323003d66' x='530' y='210' width='65' height='290' rx='10'/%3E%3Crect fill='%2323001f3f' x='610' y='195' width='70' height='305' rx='8'/%3E%3Crect fill='%2323002b4d' x='690' y='225' width='60' height='275' rx='9'/%3E%3Crect fill='%2323003d66' x='760' y='180' width='80' height='320' rx='13'/%3E%3Crect fill='%2323001f3f' x='850' y='220' width='55' height='280' rx='8'/%3E%3Crect fill='%2323002b4d' x='920' y='155' width='70' height='345' rx='12'/%3E%3Crect fill='%2323003d66' x='1000' y='200' width='65' height='300' rx='10'/%3E%3Crect fill='%2323001f3f' x='1075' y='235' width='60' height='265' rx='9'/%3E%3Crect fill='%2323002b4d' x='1145' y='165' width='75' height='335' rx='11'/%3E%3C/g%3E%3Cg opacity='0.7'%3E%3Ccircle fill='%23ffeb3b' cx='110' cy='195' r='3'/%3E%3Ccircle fill='%23ffeb3b' cx='170' cy='170' r='2'/%3E%3Ccircle fill='%23ffeb3b' cx='245' cy='220' r='3'/%3E%3Ccircle fill='%23ffeb3b' cx='305' cy='180' r='2'/%3E%3Ccircle fill='%23ffeb3b' cx='385' cy='210' r='3'/%3E%3Ccircle fill='%23ffeb3b' cx='470' cy='150' r='2'/%3E%3Ccircle fill='%23ffeb3b' cx='555' cy='185' r='3'/%3E%3Ccircle fill='%23ffeb3b' cx='630' cy='170' r='2'/%3E%3Ccircle fill='%23ffeb3b' cx='715' cy='220' r='3'/%3E%3Ccircle fill='%23ffeb3b' cx='790' cy='155' r='2'/%3E%3Ccircle fill='%23ffeb3b' cx='870' cy='195' r='3'/%3E%3Ccircle fill='%23ffeb3b' cx='945' cy='130' r='2'/%3E%3Ccircle fill='%23ffeb3b' cx='1025' cy='180' r='3'/%3E%3Ccircle fill='%23ffeb3b' cx='1090' cy='210' r='2'/%3E%3Ccircle fill='%23ffeb3b' cx='1165' cy='160' r='3'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: bottom;
+            z-index: -2;
+            opacity: 0.15;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 30px;
+            background: rgba(0, 20, 40, 0.92);
+            border-radius: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(66, 153, 225, 0.4);
+            backdrop-filter: blur(20px);
+        }
+
+        .header h1 {
+            font-size: 3.2em;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #4299e1, #48bb78, #ed8936, #f56565);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 40px rgba(66, 153, 225, 0.6);
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .header p {
+            font-size: 1.6em;
+            color: #a0aec0;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .header .subtitle {
+            font-size: 1.3em;
+            margin-top: 8px;
+            color: #68d391;
+            font-weight: 600;
+        }
+
+        .progress-section {
+            background: linear-gradient(135deg, rgba(237, 100, 166, 0.92), rgba(245, 101, 101, 0.92));
+            padding: 30px 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+        }
+
+        .progress-container {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50px;
+            height: 45px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, #48bb78 0%, #38b2ac 50%, #4299e1 100%);
+            height: 100%;
+            border-radius: 50px;
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(72, 187, 120, 0.6);
+        }
+
+        .progress-text {
+            font-size: 1.3em;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .legend {
+            background: rgba(0, 20, 40, 0.92);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 40px;
+            border: 2px solid rgba(66, 153, 225, 0.4);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(20px);
+        }
+
+        .legend h3 {
+            margin-bottom: 20px;
+            color: #4299e1;
+            font-size: 1.5em;
+            text-align: center;
+            text-shadow: 0 2px 10px rgba(66, 153, 225, 0.5);
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .legend-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(66, 153, 225, 0.3);
+        }
+
+        .legend-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4em;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .flow-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .command-card {
+            background: rgba(0, 20, 40, 0.95);
+            border-radius: 20px;
+            padding: 25px;
+            border: 2px solid;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            backdrop-filter: blur(15px);
+        }
+
+        .command-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, transparent, currentColor, transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .command-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+        }
+
+        .command-card:hover::before {
+            opacity: 1;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .card-number {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-icon {
+            font-size: 2.2em;
+            opacity: 0.8;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            letter-spacing: 0.5px;
+        }
+
+        .card-command {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 12px;
+            font-family: 'Courier New', Consolas, monospace;
+            font-size: 1em;
+            margin-bottom: 15px;
+            border-left: 4px solid;
+            word-break: break-all;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .card-description {
+            color: #cbd5e0;
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .checkbox {
+            width: 45px;
+            height: 45px;
+            border: 3px solid rgba(255, 255, 255, 0.4);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        .checkbox:hover {
+            border-color: #48bb78;
+            transform: scale(1.15);
+            box-shadow: 0 8px 25px rgba(72, 187, 120, 0.4);
+        }
+
+        .checkbox.checked {
+            background: linear-gradient(135deg, #48bb78, #38b2ac);
+            border-color: #48bb78;
+            animation: pulse 0.6s ease-out;
+        }
+
+        .checkbox.checked::after {
+            content: '✓';
+            color: white;
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Category Colors */
+        .system-util {
+            border-color: #4299e1;
+        }
+        .system-util .card-number {
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+        }
+        .system-util .card-command {
+            border-left-color: #4299e1;
+        }
+
+        .repair-tool {
+            border-color: #48bb78;
+        }
+        .repair-tool .card-number {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+        }
+        .repair-tool .card-command {
+            border-left-color: #48bb78;
+        }
+
+        .admin-task {
+            border-color: #9f7aea;
+        }
+        .admin-task .card-number {
+            background: linear-gradient(135deg, #9f7aea, #805ad5);
+        }
+        .admin-task .card-command {
+            border-left-color: #9f7aea;
+        }
+
+        .network-cmd {
+            border-color: #38b2ac;
+        }
+        .network-cmd .card-number {
+            background: linear-gradient(135deg, #38b2ac, #319795);
+        }
+        .network-cmd .card-command {
+            border-left-color: #38b2ac;
+        }
+
+        .critical-action {
+            border-color: #f56565;
+        }
+        .critical-action .card-number {
+            background: linear-gradient(135deg, #f56565, #e53e3e);
+        }
+        .critical-action .card-command {
+            border-left-color: #f56565;
+        }
+
+        .benefits-section {
+            background: rgba(0, 20, 40, 0.92);
+            border-radius: 25px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+            border: 2px solid rgba(66, 153, 225, 0.4);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(20px);
+        }
+
+        .benefits-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #4299e1;
+            text-shadow: 0 0 30px rgba(66, 153, 225, 0.6);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .benefit-card {
+            background: linear-gradient(135deg, rgba(66, 153, 225, 0.25), rgba(72, 187, 120, 0.25));
+            padding: 30px;
+            border-radius: 18px;
+            border: 1px solid rgba(66, 153, 225, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(66, 153, 225, 0.3);
+        }
+
+        .benefit-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #48bb78;
+            font-weight: 700;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .flow-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .flow-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .header h1 {
+                font-size: 2.4em;
+            }
+            .header p {
+                font-size: 1.3em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .flow-container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+            .header {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>COMMAND PROMPT POWER MOVES</h1>
+            <p>16 Essential Commands for 2025-2026</p>
+            <p class="subtitle">Boost Efficiency & Troubleshoot Like a Pro</p>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="progress-text" id="progressText">0 of 16 commands mastered - Start your journey!</div>
+        </div>
+
+        <div class="legend">
+            <h3>🔑 LEGEND - Command Categories</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-icon" style="background: linear-gradient(135deg, #4299e1, #3182ce);">⚙️</div>
+                    <span><strong>System Utilities</strong></span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon" style="background: linear-gradient(135deg, #48bb78, #38a169);">🔧</div>
+                    <span><strong>Repair Tools</strong></span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon" style="background: linear-gradient(135deg, #9f7aea, #805ad5);">👨‍💼</div>
+                    <span><strong>Admin Tasks</strong></span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon" style="background: linear-gradient(135deg, #38b2ac, #319795);">🌐</div>
+                    <span><strong>Network Commands</strong></span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon" style="background: linear-gradient(135deg, #f56565, #e53e3e);">⚠️</div>
+                    <span><strong>Critical Actions</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flow-container">
+            <!-- Command 1 -->
+            <div class="command-card system-util" onclick="toggleCommand('cmd1')">
+                <div class="card-header">
+                    <div class="card-number">1</div>
+                    <div class="card-icon">⚙️</div>
+                </div>
+                <div class="card-title">UPDATE ALL APPS</div>
+                <div class="card-command">winget upgrade --all</div>
+                <div class="card-description">Updates all apps on your system. Replaces Chocolatey and manual updating. Run this regularly to keep everything current.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd1"></div>
+                </div>
+            </div>
+
+            <!-- Command 2 -->
+            <div class="command-card repair-tool" onclick="toggleCommand('cmd2')">
+                <div class="card-header">
+                    <div class="card-number">2</div>
+                    <div class="card-icon">🔧</div>
+                </div>
+                <div class="card-title">REPAIR SYSTEM FILES</div>
+                <div class="card-command">sfc /scannow</div>
+                <div class="card-description">Fixes random Windows weirdness and repairs corrupt system files. Verifies everything and cleans you right up.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd2"></div>
+                </div>
+            </div>
+
+            <!-- Command 3 -->
+            <div class="command-card repair-tool" onclick="toggleCommand('cmd3')">
+                <div class="card-header">
+                    <div class="card-number">3</div>
+                    <div class="card-icon">🔧</div>
+                </div>
+                <div class="card-title">DEEPER SYSTEM REPAIR</div>
+                <div class="card-command">DISM /Online /Cleanup-Image /RestoreHealth</div>
+                <div class="card-description">Even deeper scan tool that fixes issues SFC cannot. Run this for stubborn system problems.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd3"></div>
+                </div>
+            </div>
+
+            <!-- Command 4 -->
+            <div class="command-card system-util" onclick="toggleCommand('cmd4')">
+                <div class="card-header">
+                    <div class="card-number">4</div>
+                    <div class="card-icon">⚙️</div>
+                </div>
+                <div class="card-title">BATTERY HEALTH REPORT</div>
+                <div class="card-command">powercfg /batteryreport</div>
+                <div class="card-description">Laptop-specific command that creates a detailed battery health report. Check battery wear and capacity.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd4"></div>
+                </div>
+            </div>
+
+            <!-- Command 5 -->
+            <div class="command-card network-cmd" onclick="toggleCommand('cmd5')">
+                <div class="card-header">
+                    <div class="card-number">5</div>
+                    <div class="card-icon">🌐</div>
+                </div>
+                <div class="card-title">VIEW DNS CACHE</div>
+                <div class="card-command">ipconfig /displaydns</div>
+                <div class="card-description">Shows DNS cache and debugs weird website issues. Great for troubleshooting connection problems.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd5"></div>
+                </div>
+            </div>
+
+            <!-- Command 6 -->
+            <div class="command-card network-cmd" onclick="toggleCommand('cmd6')">
+                <div class="card-header">
+                    <div class="card-number">6</div>
+                    <div class="card-icon">🌐</div>
+                </div>
+                <div class="card-title">NETWORK PORT USAGE</div>
+                <div class="card-command">netstat -ano</div>
+                <div class="card-description">For network engineers - shows what is using what port. See all ports and what's listening on them.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd6"></div>
+                </div>
+            </div>
+
+            <!-- Command 7 -->
+            <div class="command-card system-util" onclick="toggleCommand('cmd7')">
+                <div class="card-header">
+                    <div class="card-number">7</div>
+                    <div class="card-icon">⚙️</div>
+                </div>
+                <div class="card-title">RUNNING SERVICES/PROCESSES</div>
+                <div class="card-command">tasklist /svc</div>
+                <div class="card-description">Replaces Task Manager detective work. Shows all services and processes currently running.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd7"></div>
+                </div>
+            </div>
+
+            <!-- Command 8 -->
+            <div class="command-card critical-action" onclick="toggleCommand('cmd8')">
+                <div class="card-header">
+                    <div class="card-number">8</div>
+                    <div class="card-icon">⚠️</div>
+                </div>
+                <div class="card-title">REMOTE SHUTDOWN</div>
+                <div class="card-command">shutdown /s /t 0</div>
+                <div class="card-description">Forces immediate shutdown. Really handy when working remotely. Use with caution!</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd8"></div>
+                </div>
+            </div>
+
+            <!-- Command 9 -->
+            <div class="command-card critical-action" onclick="toggleCommand('cmd9')">
+                <div class="card-header">
+                    <div class="card-number">9</div>
+                    <div class="card-icon">⚠️</div>
+                </div>
+                <div class="card-title">GRAPHICAL REMOTE SHUTDOWN</div>
+                <div class="card-command">shutdown /i</div>
+                <div class="card-description">IT gold! Opens graphical remote shutdown manager. Shutdown multiple computers with GUI.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd9"></div>
+                </div>
+            </div>
+
+            <!-- Command 10 -->
+            <div class="command-card network-cmd" onclick="toggleCommand('cmd10')">
+                <div class="card-header">
+                    <div class="card-number">10</div>
+                    <div class="card-icon">🌐</div>
+                </div>
+                <div class="card-title">VIEW MAC ADDRESS</div>
+                <div class="card-command">getmac</div>
+                <div class="card-description">Shows MAC address of local and remote machines. Essential for network identification.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd10"></div>
+                </div>
+            </div>
+
+            <!-- Command 11 -->
+            <div class="command-card system-util" onclick="toggleCommand('cmd11')">
+                <div class="card-header">
+                    <div class="card-number">11</div>
+                    <div class="card-icon">⚙️</div>
+                </div>
+                <div class="card-title">SOFTWARE INVENTORY</div>
+                <div class="card-command">wmic product get name</div>
+                <div class="card-description">Quick software inventory showing all installed apps on your system.</div>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="check-cmd11"></div>
+                </div>
+            </div>
+
+            <!-- Command 12 -->
+            <div class="command-card admin-task" onclick="toggleCommand('cmd12')">
+                <div class="card-header">
+                    <div class="card-number">12</div>
+                    <div class="card-icon">👨‍💼</div>
+                </div>
+                <div class="card-title">FORCE GROUP POLICY UPDATE</div>
+                <div class="card-command">gpupdate /force</div>
+                <div class="
